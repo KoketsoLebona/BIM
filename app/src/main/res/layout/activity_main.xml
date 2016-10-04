@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_light"
+    tools:context="com.example.codetribe.ex1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Mass Index(BMI)"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_purple"
+        android:id="@+id/textW"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h"
+        android:layout_weight="1"
+        android:hint="Enter your height"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="362dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.65"
+        android:id="@+id/rdg"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 50"
+            android:layout_marginTop="40dp"
+            android:onClick="onClick"
+            android:id="@+id/rdb1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="51 - 65"
+            android:onClick="onClick"
+            android:layout_marginTop="70dp"
+            android:id="@+id/rdb2"
+             />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66 - 80"
+            android:onClick="onClick"
+            android:layout_marginTop="70dp"
+            android:id="@+id/rdb3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 - 100"
+            android:id="@+id/rdb4"
+            android:onClick="onClick"
+            android:layout_marginTop="70dp" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
